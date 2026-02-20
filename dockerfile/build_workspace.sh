@@ -15,6 +15,7 @@ mkdir -p ${CATKIN_WS}/src
 cd ${CATKIN_WS}/src
 if [ ! -d "Hydra" ]; then
     git clone https://github.com/MIT-SPARK/Hydra.git Hydra
+    cd Hydra && git checkout v1.0.0 && cd ..
 fi
 
 # Convert SSH URLs to HTTPS and import dependencies

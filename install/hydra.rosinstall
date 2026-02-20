@@ -30,9 +30,6 @@
     uri: git@github.com:MIT-SPARK/Spark-DSG.git
     version: v1.0.0
 - git:
-    local-name: hydra
-    uri: git@github.com:MIT-SPARK/Hydra.git
-- git:
     local-name: kimera_semantics
     uri: git@github.com:MIT-SPARK/Kimera-Semantics.git
     version: feature/noetic_fixes
@@ -48,7 +45,7 @@
 - git:
     local-name: pose_graph_tools
     uri: git@github.com:MIT-SPARK/pose_graph_tools.git
-    version: master
+    version: ecf0115
 - git:
     local-name: teaser_plusplus
     uri: git@github.com:MIT-SPARK/TEASER-plusplus.git
