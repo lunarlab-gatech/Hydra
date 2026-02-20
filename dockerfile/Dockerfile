@@ -55,6 +55,10 @@ RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
     # Debugging
     ros-noetic-rqt-graph \
     ros-noetic-rqt-tf-tree \
+    ros-noetic-tf2-eigen \
+    ros-noetic-pcl-conversions \
+    ros-noetic-pcl-ros \
+    ros-noetic-depth-image-proc \
     && sudo rm -rf /var/lib/apt/lists/*
 
 # Default shell
