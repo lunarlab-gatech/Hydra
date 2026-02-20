@@ -14,7 +14,7 @@ source /opt/ros/noetic/setup.bash
 mkdir -p ${CATKIN_WS}/src
 cd ${CATKIN_WS}/src
 if [ ! -d "Hydra" ]; then
-    git clone https://github.com/MIT-SPARK/Hydra.git Hydra
+    git clone https://github.com/lunarlab-gatech/Hydra.git Hydra
     cd Hydra && git checkout v1.0.0 && cd ..
 fi
 

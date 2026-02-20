@@ -1,4 +1,4 @@
-# Maplab
+# Hydra
 
 Our fork of the [Hydra](https://github.com/MIT-SPARK/Hydra) repository for evaluation as a baseline running on the HERCULES dataset.
 
