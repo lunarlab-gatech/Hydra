@@ -5,7 +5,7 @@ start_directory: /home/nisemono/Documents/ros_workspaces/hydra_ws
 # Edit DSG_FILE to the scene graph filename inside that folder.
 
 environment:
-  DSG_DIR: /home/nisemono/Documents/ros_workspaces/hydra_ws/src/Hydra/hydra_dsg_builder/output/uhumans2/office/backend
+  DSG_DIR: /home/nisemono/catkin_ws/src/Hydra/hydra_dsg_builder/output/uhumans2/office/backend
   DSG_FILE: dsg_with_mesh.json
 
 windows:

@@ -5,14 +5,10 @@ windows:
   - window_name: hydra
     layout: tiled
     panes:
-      - shell_command:
-          - roscore
+      - roscore
 
-      - shell_command:
-          - sleep 3 && bash -c "source devel/setup.bash && rosparam set use_sim_time true && roslaunch hydra_dsg_builder uhumans2_incremental_dsg.launch"
+      - sleep 3 && bash -c "source /home/nisemono/catkin_ws/devel/setup.bash && rosparam set use_sim_time true && roslaunch hydra_dsg_builder uhumans2_incremental_dsg.launch"
 
-      - shell_command:
-          - sleep 8 && bash -c "source devel/setup.bash && roslaunch hydra_utils hydra_streaming_visualizer.launch"
+      - sleep 8 && bash -c "source /home/nisemono/catkin_ws/devel/setup.bash && roslaunch hydra_utils hydra_streaming_visualizer.launch"
 
-      - shell_command:
-          - echo "Edit this pane: rosbag play /path/to/your.bag --clock"
+      - sleep 8 && bash -c "rosbag play /home/nisemono/data/V1.0/Data/office.bag --clock"
