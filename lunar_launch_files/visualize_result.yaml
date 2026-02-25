@@ -1,0 +1,19 @@
+session_name: hydra_viz
+start_directory: /home/nisemono/Documents/ros_workspaces/hydra_ws
+
+# Edit DSG_DIR to the absolute path of the output folder you want to visualize.
+# Edit DSG_FILE to the scene graph filename inside that folder.
+
+environment:
+  DSG_DIR: /home/nisemono/Documents/ros_workspaces/hydra_ws/src/Hydra/hydra_dsg_builder/output/uhumans2/office/backend
+  DSG_FILE: dsg_with_mesh.json
+
+windows:
+  - window_name: viz
+    layout: even-horizontal
+    panes:
+      - shell_command:
+          - roscore
+
+      - shell_command:
+          - sleep 3 && bash -c "source ~/catkin_ws/devel/setup.bash && roslaunch hydra_utils hydra_visualizer.launch scene_graph_dir:=$DSG_DIR scene_graph:=$DSG_FILE"

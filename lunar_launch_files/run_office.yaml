@@ -1,0 +1,18 @@
+session_name: hydra
+start_directory: /home/nisemono/Documents/ros_workspaces/hydra_ws
+
+windows:
+  - window_name: hydra
+    layout: tiled
+    panes:
+      - shell_command:
+          - roscore
+
+      - shell_command:
+          - sleep 3 && bash -c "source devel/setup.bash && rosparam set use_sim_time true && roslaunch hydra_dsg_builder uhumans2_incremental_dsg.launch"
+
+      - shell_command:
+          - sleep 8 && bash -c "source devel/setup.bash && roslaunch hydra_utils hydra_streaming_visualizer.launch"
+
+      - shell_command:
+          - echo "Edit this pane: rosbag play /path/to/your.bag --clock"
